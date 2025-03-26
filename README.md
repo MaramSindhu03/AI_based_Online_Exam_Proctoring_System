@@ -3,6 +3,22 @@ AI-Based Online Exam Proctoring System is an innovative project designed to main
 
 Moreover, the system generates a comprehensive log file named "activity.txt" that contains detailed records of all the activities and behaviors exhibited by the examinee during the examination. This log file serves as a valuable resource for educators and administrators, allowing them to review and analyze the test-taker's actions post-exam, aiding in the identification of any irregularities or concerns. With its automated monitoring capabilities and detailed activity logging, educators can confidently administer exams remotely, knowing that the integrity of the assessment process is upheld and supported by thorough documentation.
 
+## Prerequisites
+To run the programs in this repository, follow these steps:
+1. Create a virtual environment using the command:
+python -m venv venv
+2. Activate the virtual environment
+./venv/Scripts/activate
+3. Upgrade pip and install dependencies:
+pip install --upgrade pip
+pip install -r requirements.txt
+4. Download additional models required for face detection and object detection:
+wget http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
+bzip2 -d shape_predictor_68_face_landmarks.dat.bz2
+5. Running the Application
+Run the main application script:
+python app.py
+
 ## Key Features and Functions 
 1. Face Detection using Dlib
 2. Eye Gaze Detection
@@ -22,5 +38,7 @@ Moreover, the system generates a comprehensive log file named "activity.txt" tha
 7. Web Skills (HTML, CSS, JS)
 8. Flask Server
 9. SQL Database
+
+
 
 
